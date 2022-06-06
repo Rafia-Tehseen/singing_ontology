@@ -1,13 +1,80 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.singonto.org#"
      xml:base="http://www.singonto.org"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:su="http://su.edu.pk/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.singonto.org/#"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:elements="http://purl.org/dc/elements/1.1/ "
+     xmlns:elements1="http://purl.org/dc/elements/1.1/%20">
+    <owl:Ontology rdf:about="http://www.singingontology.org/">
+        <owl:versionIRI rdf:resource="http://www.singingontology.org/"/>
+        <owl:imports rdf:resource="http://www.singingontology.org/"/>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arooba</dc:contributor>
+        <dc:creationdate rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">27-06-2022</dc:creationdate>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fatima Masood
+Rafia Tehseen</dc:creator>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The purpose of building the Reference Ontology is to provide a consensual knowledge model of the different types of Singing domain to be used by public.
+The ontology has to focus just on the different types of singing domain and its presence in different locations around the world. The level of granularity is directly related to the competency questions and terms identified.</dc:description>
+        <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Rafia-Tehseen/singing_ontology</dc:publisher>
+        <dc:tittle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singing Ontology</dc:tittle>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creationdate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creationdate"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/tittle -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/tittle"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/%20tittle -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/%20tittle"/>
     
 
 
@@ -4570,7 +4637,7 @@
     <owl:ObjectProperty rdf:about="http://www.singonto.org/#soulIsInU.S.A">
         <rdfs:subPropertyOf rdf:resource="http://www.singonto.org#soulHasRegion"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.singonto.org#Soul"/>
         <rdfs:range rdf:resource="http://www.singonto.org#U.S.A"/>
     </owl:ObjectProperty>
